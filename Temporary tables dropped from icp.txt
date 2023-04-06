@@ -1,0 +1,64 @@
+*******************************************************************************************************
+******************************** Temporary tables dropped from icp ************************************
+*******************************************************************************************************
+
+-- drop temporary table if exists fin_year;
+-- drop temporary table if exists fin_year;
+-- drop temporary table if exists fin_year;
+-- drop temporary table if exists fin_year;
+-- drop temporary table if exists Fiscal_call_log;
+-- drop temporary table if exists Fiscal_call_log;
+-- drop temporary table if exists Fiscal_call_log;
+-- drop temporary table if exists Fiscal_call_log;
+-- drop temporary table if exists Fiscal_deposit_staff;
+-- drop temporary table if exists Fiscal_deposit_staff;
+-- drop temporary table if exists Fiscal_deposit_staff;
+-- drop temporary table if exists Fiscal_deposit_staff;
+-- drop temporary table if exists a;
+-- drop temporary table if exists a;
+-- drop temporary table if exists Fiscal_a;
+-- drop temporary table if exists b;
+-- drop temporary table if exists Fiscal_b;
+-- drop temporary table if exists c;
+-- drop temporary table if exists Fiscal_c;
+-- drop temporary table if exists Fiscal_a_b_c;
+-- drop temporary table if exists Fiscal_garages_service_freq_pri;
+-- drop temporary table if exists Fiscal_garages_service_freq_pri;
+-- drop temporary table if exists Fiscal_garages_service_freq_pri;
+-- drop temporary table if exists Fiscal_garages_service_freq_pri;
+-- drop temporary table if exists Fiscal_garages_service;
+-- drop temporary table if exists Fiscal_Vehicle_viewing;
+-- drop temporary table if exists Fiscal_Vehicle_viewing;
+-- drop temporary table if exists Fiscal_Vehicle_viewing;
+-- drop temporary table if exists Fiscal_Vehicle_viewing;
+-- drop temporary table if exists Fiscal_Vehicle_viewing;
+-- drop temporary table if exists Fiscal_Vehicle_viewing;
+-- drop temporary table if exists Fiscal_Vehicle_viewing;
+-- drop temporary table if exists Fiscal_a_b_c_Model;
+-- drop temporary table if exists Op_service_mechanic;
+-- drop temporary table if exists Op_service_Electrical;
+-- drop temporary table if exists Op_service_MOT;
+-- drop temporary table if exists Op_service_Carwash;
+-- drop temporary table if exists Op_service_all;
+-- drop temporary table if exists Fiscal_Op_VAT;
+-- drop temporary table if exists Fiscal_sale_staff;
+-- drop temporary table if exists Fiscal_Vehicle_viewing;
+
+drop view if exists Fiscal_b;
+drop view if exists Fiscal_c;
+drop view if exists Fiscal_Vehicle_viewing;
+drop view if exists Fiscal_call_log;
+drop view if exists Op_service_all;
+drop view if exists Op_service_mechanic;
+drop view if exists Op_service_Electrical;
+
+drop view if exists Op_service_MOT;
+drop view if exists Op_service_Electrical;
+show tables;
+
+
+
+
+
+
+

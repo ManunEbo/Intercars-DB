@@ -1,0 +1,139 @@
+*****************************************************************************
+			icp.Op_bank_transfer
+*****************************************************************************
+
+		Testing insert into icp.Op_bank_transfer
+	********************************************************
+
+			Carwash garage
+		******************************
+
+set @Serv_date = "2021-05-09";
+set @serv_type = "Carwash";
+set @V5C_id = (select V5C_id from icp.V5C where Reg_numb ="ZC14 1XW");
+set @Serv_Invoice_nbr = "A647583";
+
+/*To retrieve Op_service_id from icp.Op_service
+  use the following:*/
+set @Op_service_id = (select Op_service_id from icp.Op_service 
+				  where Serv_date = @Serv_date and serv_type = @serv_type 
+                  and V5C_id = @V5C_id and Serv_Invoice_nbr = @Serv_Invoice_nbr);
+
+set @Transfer_amount = 10;
+set @Transfer_date = "2021-05-16";
+
+call Op_bank_transfer_call();
+select * from icp.Op_bank_transfer;
+
+*****************************************************************************
+
+		Electrical Garage
+	*********************************
+
+set @Serv_date = "2021-06-11";
+set @serv_type = "Electrical";
+set @V5C_id = (select V5C_id from icp.V5C where Reg_numb ="ZC14 1XW");
+set @Serv_Invoice_nbr = "SM1114586";
+
+/*To retrieve Op_service_id from icp.Op_service
+  use the following:*/
+set @Op_service_id = (select Op_service_id from icp.Op_service 
+				  where Serv_date = @Serv_date and serv_type = @serv_type 
+                  and V5C_id = @V5C_id and Serv_Invoice_nbr = @Serv_Invoice_nbr);
+
+set @Transfer_amount = 135;
+set @Transfer_date = "2021-06-19";
+
+call Op_bank_transfer_call();
+select * from icp.Op_bank_transfer;
+
+*****************************************************************************
+
+		MOT Garage
+	**************************
+
+set @Serv_date = "2021-03-16";
+set @serv_type = "MOT service";
+set @V5C_id = (select V5C_id from icp.V5C where Reg_numb ="ZC14 1XW");
+set @Serv_Invoice_nbr = "AH75983732";
+
+/*To retrieve Op_service_id from icp.Op_service
+  use the following:*/
+set @Op_service_id = (select Op_service_id from icp.Op_service 
+				  where Serv_date = @Serv_date and serv_type = @serv_type 
+                  and V5C_id = @V5C_id and Serv_Invoice_nbr = @Serv_Invoice_nbr);
+
+set @Transfer_amount = 30;
+set @Transfer_date = "2021-03-20";
+
+call Op_bank_transfer_call();
+select * from icp.Op_bank_transfer;
+
+*****************************************************************************
+
+		New Op_bank_transfer with Op_VAT insert via Trigger
+	*******************************************************************
+
+				Carwash second car
+			**********************************
+
+
+
+/*Bank transfer Trigger for icp.Op_VAT*/
+
+set @Serv_date = "2021-08-16";
+set @serv_type = "Carwash";
+set @V5C_id = (select V5C_id from icp.V5C where Reg_numb ="AN1 Tish");
+set @Serv_Invoice_nbr = "A647584";
+
+/*To retrieve Op_service_id from icp.Op_service
+  use the following:*/
+set @Op_service_id = (select Op_service_id from icp.Op_service 
+				  where Serv_date = @Serv_date and serv_type = @serv_type 
+                  and V5C_id = @V5C_id and Serv_Invoice_nbr = @Serv_Invoice_nbr);
+
+set @Split_payment = 0;
+set @Transfer_amount = 10;
+set @Transfer_date = "2021-08-21";
+
+set @VAT_Flag ="Y";
+
+************************************************
+
+*** Do the following in the .py file not the .kv file ***
+
+-- Set @Gross_Price = new.Amount;
+set @VAT_rate = 0.2;
+set @VAT = 2;
+set @Net = 8;
+
+call Op_bank_transfer_call();
+select * from icp.Op_bank_transfer;
+select * from icp.Op_VAT;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

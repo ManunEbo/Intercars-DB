@@ -1,0 +1,27 @@
+*****************************************************************************
+				icp.Fund Test
+*****************************************************************************
+
+
+set @Entity_Name = "Shark.org";
+set @VAT_Registration_Number ="354658583";
+
+set @Daily_Chrg = 0.50;
+set @Loading_fee=50.00;
+set @Facility_fee = 100.00;
+
+set @Addr1 ="The Wolf House";
+set @Addr2 ="Spinner Avenue";
+set @Addr3 ="Chester";
+set @Addr4 ="Chestershire";
+set @Addr5 ="England";
+set @Addr6 ="CE17 1WS";
+set @email ="Enquiry@Shark.org";
+set @Tel = "0023567758638";
+
+
+insert into icp.Fund(Daily_Chrg,Loading_fee,Facility_fee)values(@Daily_Chrg,@Loading_fee,@Facility_fee);
+
+select * from icp.Fund;
+select * from icp.Entity;
+select * from icp.Contact_details;

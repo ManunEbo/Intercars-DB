@@ -1,0 +1,119 @@
+*****************************************************************************
+				icp.Op_misc_Receipt
+*****************************************************************************
+
+
+
+set @Venue ="Westly Coats";
+set @Vat_registration ="012792";
+set @Item  = "Car paint midnight green";
+set @Price = 5.00;
+set @Quantity = 4;
+set @Total = 50;
+set @Auth_Code = 164533;
+set @Receipt_nbr = "58478373";
+set @Receipt_date = "2021/06/11";
+set @Receipt_time = "08:45";
+
+call Op_misc_receipt_Call();
+
+select * from icp.Op_misc_Receipt;
+
+*****************************************************************************
+/* New insert into icp.Op_misc_Receipt with icp.Op_VAT insert via a trigger */
+*****************************************************************************
+
+set @Venue ="Asda Petrol Station";
+set @Vat_registration ="GB 240 6175 30";
+set @Item  = "Sandwhich";
+set @Price = 2.50;/*total: 19.50*/
+set @Quantity = 1;
+set @Total = 30;/*5.50 remaining for the other products Windscreen washer £3, sandwich £2.50*/
+set @Auth_Code = 05644;
+set @Receipt_nbr = "6654789113";
+set @Receipt_date = "2021/07/12";
+set @Receipt_time = "11:15";
+
+set @VAT_Flag ="N";
+-- Set @Gross_Price = new.Amount;
+set @VAT_rate = 0.2;
+set @VAT = 5;
+set @Net = 25;
+
+call Op_misc_receipt_Call();
+
+select * from icp.Op_misc_Receipt;
+select * from icp.Op_VAT;
+
+*****************************************************************************
+
+set @Venue ="Asda Petrol Station";
+set @Vat_registration ="GB 240 6175 30";
+set @Item  = "windscreen washer";
+set @Price = 3.00;/*total: 19.50*/
+set @Quantity = 1;
+set @Total = 30;/*5.50 remaining for the other products Windscreen washer £3, sandwich £2.50*/
+set @Auth_Code = 05644;
+set @Receipt_nbr = "6654789113";
+set @Receipt_date = "2021/07/12";
+set @Receipt_time = "11:15";
+
+set @VAT_Flag ="N";
+-- Set @Gross_Price = new.Amount;
+set @VAT_rate = 0.2;
+set @VAT = 5;
+set @Net = ?;
+
+call Op_misc_receipt_Call();
+
+select * from icp.Op_misc_Receipt;
+select * from icp.Op_VAT;
+
+*****************************************************************************
+
+set @Venue ="Asda Petrol Station";
+set @Vat_registration ="GB 240 6175 30";
+set @Item  = "Diesel";
+set @Price = 1.30;/*total: 19.50*/
+set @Quantity = 15;
+set @Total = 25;/*5.50 remaining for the other products Windscreen washer £3, sandwich £2.50*/
+set @Auth_Code = 05644;
+set @Receipt_nbr = "6654789113";
+set @Receipt_date = "2021/07/12";
+set @Receipt_time = "11:15";
+
+set @VAT_Flag ="Y";
+
+*** Make sure that @Gross_Price variable is created and pass a value to it.
+
+Set @Gross_Price = float(Price * quantity);
+set @Net = float(Price * quantity)/1.2;
+set @VAT_rate = 0.2;
+set @VAT = Gross_Price - Net;
+
+
+call Op_misc_receipt_Call();
+
+select * from icp.Op_misc_Receipt;
+select * from icp.Op_VAT;
+
+16.25
+4.58
+
+20.83
+
+
+4.17
+
+
+
+
+
+
+
+
+
+
+
+
+

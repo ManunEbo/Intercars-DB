@@ -1,0 +1,17 @@
+*****************************************************************************
+		icp.MOT_Refusal import Test
+*****************************************************************************
+
+set @V5C_ID = (select V5C_ID from icp.V5C where Reg_numb= @Vehicle_Reg_MOT_Date);
+set @Vehicle_Reg_MOT_Date ="AA14 XUU";
+set @Test_comp = "Super Mario Motors";
+set @Test_Addr =  "2 Tims Drive Leicester LE2 2BZ";
+set @Test_Date = "2019/02/22";
+set @Ref_Reason1 = "What's wrong Mario?";
+set @Ref_Reason2 = "How's life?";
+set @Ref_Reason3 ="";
+set @Ref_Reason4 = "";
+set @Ref_Reason5 = "";
+
+call icp_MOT_Refusal_call();
+select * from icp.MOT_Refusal;

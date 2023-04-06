@@ -1,0 +1,41 @@
+*****************************************************************************
+			icp.Vendor insert Test
+*****************************************************************************
+
+set @Vendor_reference = "BA101";
+set @Entity_Name = "Barclays";
+set @VAT_Registration_Number ="895402451";
+
+set @Addr1 ="The Sheep House";
+set @Addr2 ="Midland Avenue";
+set @Addr3 ="Derby";
+set @Addr4 ="Derbyshire";
+set @Addr5 ="England";
+set @Addr6 ="DE17 1JA";
+set @email ="Enquiry@Barclays.com";
+set @Tel = "013458879113";
+
+
+insert into icp.Vendor(Vendor_reference)values(@Vendor_reference);
+
+select * from icp.Vendor;
+select * from icp.Entity;
+select * from icp.Contact_details;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

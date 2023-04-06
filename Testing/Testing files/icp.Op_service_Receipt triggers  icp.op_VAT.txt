@@ -1,0 +1,41 @@
+*****************************************************************************
+			icp.Op_service_Receipt icp.op_VAT
+*****************************************************************************
+
+
+New version of icp.Op_service_receipt with VAT insert via the trigger
+
+set @serv_type = "Carwash";
+
+The information below will be pulled from the database 
+and displayed as a list [(Op_service_id,Serv_Invoice_Date,Serv_Invoice_nbr,Price)]:
+
+set @Op_service_id = "1";
+set @Serv_Invoice_Date = "2021-08-16";
+set @Serv_Invoice_nbr = "A647584";
+set @Price = 10
+
+
+set @Split_payment = 0; 
+set @Trans_Date = "2021-08-21";
+set @Trans_time = "13:57:00";
+set @Auth_code = 44896;
+set @Receipt_nbr = 4889537661;
+set @Amount = 10;
+
+set @VAT_Flag ="Y";
+
+************************************************
+
+*** Do the following in the .py file not the .kv file ***
+
+-- Set @Gross_Price = new.Amount;
+
+set @Net = @Amount/1.2;
+set @VAT_rate = 0.2;
+set @VAT = @Amount - @Net;
+
+
+call Op_service_receipt_call();
+select * from icp.Op_service_Receipt;
+select * from icp.Op_VAT;

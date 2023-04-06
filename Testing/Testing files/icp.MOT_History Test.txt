@@ -1,0 +1,26 @@
+*****************************************************************************
+		icp.MOT_History import Test
+*****************************************************************************
+
+
+set @V5C_ID = (select V5C_ID from icp.V5C where Reg_numb= "YD14 XUU");
+set @Vehicle_Reg_MOT_Date ="ZC14 1XW";
+set @Test_Org = "Super Mario Motors";
+set @Test_Addr = "2 Tims Drive Leicester LE2 2BZ";
+
+set @Test_Date = "2020/02/02";
+set @Expiry_date = "2021/02/02";
+
+set @Advisory1 = "Tires warn out";
+set @Advisory2 = "Campbel warn out";
+set @Advisory3 = "Oils need changing";
+set @Advisory4 = "";
+set @Advisory5 = "";
+set @MOT_tst_Cert_Nbr = "48937545675";
+set @Price = "32"; 
+
+/*Calling the procedure*/
+call icp_MOT_History_call();
+
+select * from icp.V5C;
+select * from icp.MOT_History;

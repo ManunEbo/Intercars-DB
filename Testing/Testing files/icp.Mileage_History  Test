@@ -1,0 +1,16 @@
+*****************************************************************************
+		icp.Mileage_History import Test
+*****************************************************************************
+
+set @V5C_id = (select V5C_ID from icp.V5C where Reg_numb= @Vehicle_Reg_MOT_Date);
+set @Vehicle_Reg_MOT_Date = "AB14 XUU";
+set @Source  = "Gov.UK";
+set @Mileage = 136001;
+set @Date = "2010/09/30";
+
+
+call icp_Mileage_History_call();
+
+select * from icp.Mileage_History;
+
+-- select * from icp.V5C;

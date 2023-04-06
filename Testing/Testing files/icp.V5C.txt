@@ -1,0 +1,2942 @@
+*****************************************************************************
+		icp.V5C import Test
+*****************************************************************************
+
+/*V5C 1*/
+Set @Regnum= "AN1 Tish";
+set @Prev_regnum="";
+set @Document_Reference=8475673;
+set @First_reg="2011/07/30";
+set @first_reg_uk="2011/07/30";
+set @Make="Renault";
+Set @Model="Clio";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="																																																																		Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Gray";
+Set @Logbook_Issued_date="2021/03/13";
+set @Cylinder_capacity="2000 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Mark Ngo";
+Set @Prev_Owner1_Address="8 Forge Street Leicester LE6 3NN";
+Set @prev_Owner1_Acq_date="2016/03/27";
+
+set @Prev_owner2_Name="Sue Botta";
+Set @Prev_Owner2_Address="1 Ingles road Belford BE 1 8ST";
+Set @prev_Owner2_Acq_date= "2015/05/09";
+
+set @Prev_owner3_Name="";
+Set @Prev_Owner3_Address="";
+Set @prev_Owner3_Acq_date=null;
+
+set @Prev_owner4_Name="";
+Set @Prev_Owner4_Address="";
+Set @prev_Owner4_Acq_date=null;
+
+
+call icp_V5C_Call();
+
+select * from icp.V5C;
+
+*****************************************************************************
+
+/*V5C 2*/
+Set @Regnum= "S954LJU";
+set @Prev_regnum="";
+set @Document_Reference=2004054783;
+set @First_reg="2016/03/30";
+set @first_reg_uk="2017/03/30";
+set @Make="Renault";
+Set @Model="Clio";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Petrol";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Green";
+Set @Logbook_Issued_date="2021/01/27";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=3;
+
+set @Prev_owner1_Name="Jija Fonta";
+Set @Prev_Owner1_Address="19 Kraviun Avenue Doncaster England DD1 3YA";
+Set @prev_Owner1_Acq_date="2019/02/14";
+
+set @Prev_owner2_Name="Kolo Ubunza";
+Set @Prev_Owner2_Address="1 Highfield road Reading RG4 7PT";
+Set @prev_Owner2_Acq_date="2018/08/11";
+
+set @Prev_owner3_Name="Akizo Uzu";
+Set @Prev_Owner3_Address="33 Pangol crescent Nottingham NG4 1KE";
+Set @prev_Owner3_Acq_date="2016/04/17";
+
+set @Prev_owner4_Name="";
+Set @Prev_Owner4_Address="";
+Set @prev_Owner4_Acq_date=null;
+
+call icp_V5C_Call;
+
+*****************************************************************************
+/*V5C 3*/
+Set @Regnum= "VK57 JXV";
+set @Prev_regnum="";
+set @Document_Reference=5784883;
+set @First_reg="2015/06/12";
+set @first_reg_uk="2015/06/12";
+set @Make="BMW";
+Set @Model="X3 M SPORT";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Black";
+Set @Logbook_Issued_date="2021/07/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=2;
+
+set @Prev_owner1_Name="Hellen Winstanly";
+Set @Prev_Owner1_Address="19 Grange street Derby DE5 1CB";
+Set @prev_Owner1_Acq_date="2019/05/15";
+
+set @Prev_owner2_Name="John Arinze";
+Set @Prev_Owner2_Address="3 kalanga kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2016/06/26";
+
+set @Prev_owner3_Name="";
+Set @Prev_Owner3_Address="";
+Set @prev_Owner3_Acq_date=null;
+
+set @Prev_owner4_Name="";
+Set @Prev_Owner4_Address="";
+Set @prev_Owner4_Acq_date=null;
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 4*/
+Set @Regnum= "AK11 HBJ";
+set @Prev_regnum="";
+set @Document_Reference=158919376;
+set @First_reg="2012/07/13";
+set @first_reg_uk="2012/07/13";
+set @Make="CITROEN";
+Set @Model="C4 GRAND PICASSO";
+Set @Bodytype="7 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=7;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/09/24";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=1;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="";
+Set @Prev_Owner2_Address="";
+Set @prev_Owner2_Acq_date=null;
+
+set @Prev_owner3_Name="";
+Set @Prev_Owner3_Address="";
+Set @prev_Owner3_Acq_date=null;
+
+set @Prev_owner4_Name="";
+Set @Prev_Owner4_Address="";
+Set @prev_Owner4_Acq_date=null;
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 5*/
+Set @Regnum= "WK08 JYE";
+set @Prev_regnum="";
+set @Document_Reference=874673368541;
+set @First_reg="2015/02/09";
+set @first_reg_uk="2015/02/09";
+set @Make="JAGUAR";
+Set @Model="XF PREMIUM LUXUARY";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Black";
+Set @Logbook_Issued_date="2018/01/04";
+set @Cylinder_capacity="3000 CC";
+set @nbr_Prev_Owners=2;
+
+set @Prev_owner1_Name="Jojo bojak";
+Set @Prev_Owner1_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner1_Acq_date="2019/01/09";
+
+set @Prev_owner2_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner2_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner2_Acq_date="2015/02/09";
+
+set @Prev_owner3_Name="";
+Set @Prev_Owner3_Address="";
+Set @prev_Owner3_Acq_date=null;
+
+set @Prev_owner4_Name="";
+Set @Prev_Owner4_Address="";
+Set @prev_Owner4_Acq_date=null;
+
+call icp_V5C_Call;
+
+*****************************************************************************
+/*V5C 6*/
+Set @Regnum= "SH58 BBZ";
+set @Prev_regnum="";
+set @Document_Reference=674328541;
+set @First_reg="2019/12/12";
+set @first_reg_uk="2019/12/12";
+set @Make="SEAT";
+Set @Model="IBIZA SPORT COUPE";
+Set @Bodytype="3 door Hatchback";
+set @TaxClass="Petrol";
+set @FuelType="Light Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Silver";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=1;
+
+set @Prev_owner1_Name="Bebo Bubana";
+Set @Prev_Owner1_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner1_Acq_date="2019/12/30";
+
+set @Prev_owner2_Name="";
+Set @Prev_Owner2_Address="";
+Set @prev_Owner2_Acq_date=null;
+
+set @Prev_owner3_Name="";
+Set @Prev_Owner3_Address="";
+Set @prev_Owner3_Acq_date=null;
+
+set @Prev_owner4_Name="";
+Set @Prev_Owner4_Address="";
+Set @prev_Owner4_Acq_date=null;
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 7*/
+Set @Regnum= "GDI0 XAO";
+set @Prev_regnum="";
+set @Document_Reference=158913331;
+set @First_reg="2018/05/30";
+set @first_reg_uk="2018/05/30";
+set @Make="PEUGEOT";
+Set @Model="308";
+Set @Bodytype="3 Door Coupe";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=1;
+
+set @Prev_owner1_Name="Karen Ayre";
+Set @Prev_Owner1_Address="7 Sloane square Reading Bershire RG7 3PY";
+Set @prev_Owner1_Acq_date="2018/06/01";
+
+set @Prev_owner2_Name="";
+Set @Prev_Owner2_Address="";
+Set @prev_Owner2_Acq_date=null;
+
+set @Prev_owner3_Name="";
+Set @Prev_Owner3_Address="";
+Set @prev_Owner3_Acq_date=null;
+
+set @Prev_owner4_Name="";
+Set @Prev_Owner4_Address="";
+Set @prev_Owner4_Acq_date=null;
+
+call icp_V5C_Call;
+
+*****************************************************************************
+/*V5C 8*/
+Set @Regnum= "DS57 GCO";
+set @Prev_regnum="";
+set @Document_Reference=15411341;
+set @First_reg="2016/08/03";
+set @first_reg_uk="2016/08/03";
+set @Make="HONDA";
+Set @Model="CR-V EX I-VTEC";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Silver";
+Set @Logbook_Issued_date="2021/06/28";
+set @Cylinder_capacity="2500 CC";
+set @nbr_Prev_Owners=1;
+
+set @Prev_owner1_Name="Pyr Khune";
+Set @Prev_Owner1_Address="39 Hamburger row St Helens England ST1 3TX";
+Set @prev_Owner1_Acq_date="2016/08/17";
+
+set @Prev_owner2_Name="";
+Set @Prev_Owner2_Address="";
+Set @prev_Owner2_Acq_date=null;
+
+set @Prev_owner3_Name="";
+Set @Prev_Owner3_Address="";
+Set @prev_Owner3_Acq_date=null;
+
+set @Prev_owner4_Name="";
+Set @Prev_Owner4_Address="";
+Set @prev_Owner4_Acq_date=null;
+
+call icp_V5C_Call;
+
+*****************************************************************************
+/*V5C 9*/
+Set @Regnum= "RE60 LPY";
+set @Prev_regnum="";
+set @Document_Reference=158541;
+set @First_reg="2019/01/25";
+set @first_reg_uk="2019/01/25";
+set @Make="MITSUBISHI";
+Set @Model="ASX";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Black";
+Set @Logbook_Issued_date="2020/10/06";
+set @Cylinder_capacity="2000 CC";
+set @nbr_Prev_Owners=1;
+
+set @Prev_owner1_Name="Nerizio Pella";
+Set @Prev_Owner1_Address="1 Njojo Bara BA 1AG";
+Set @prev_Owner1_Acq_date="2019/04/30";
+
+set @Prev_owner2_Name="";
+Set @Prev_Owner2_Address="";
+Set @prev_Owner2_Acq_date=null;
+
+set @Prev_owner3_Name="";
+Set @Prev_Owner3_Address="";
+Set @prev_Owner3_Acq_date=null;
+
+set @Prev_owner4_Name="";
+Set @Prev_Owner4_Address="";
+Set @prev_Owner4_Acq_date=null;
+
+call icp_V5C_Call;
+
+*****************************************************************************
+/*V5C 10*/
+Set @Regnum= "VK11 XTM";
+set @Prev_regnum="";
+set @Document_Reference=41948372;
+set @First_reg="2017/07/30";
+set @first_reg_uk="2017/07/30";
+set @Make="MERCEDES BENZ";
+Set @Model="C CLASS C220 CDI";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Black";
+Set @Logbook_Issued_date="2021/03/10";
+set @Cylinder_capacity="3500 CC";
+set @nbr_Prev_Owners=1;
+
+set @Prev_owner1_Name="Nuambe Mbokele";
+Set @Prev_Owner1_Address="1 Artler Gore Kime 7638HQ";
+Set @prev_Owner1_Acq_date="2017/08/13";
+
+set @Prev_owner2_Name="";
+Set @Prev_Owner2_Address="";
+Set @prev_Owner2_Acq_date="";
+
+set @Prev_owner3_Name="";
+Set @Prev_Owner3_Address="";
+Set @prev_Owner3_Acq_date=null;
+
+set @Prev_owner4_Name="";
+Set @Prev_Owner4_Address="";
+Set @prev_Owner4_Acq_date=null;
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 11*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 12*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 13*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 14*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 15*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 16*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 17*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+
+*****************************************************************************
+/*V5C 18*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 19*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+
+*****************************************************************************
+/*V5C 20*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 21*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 22*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 23*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 24*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 25*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 26*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+
+*****************************************************************************
+/*V5C 27*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+
+*****************************************************************************
+/*V5C 28*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 29*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 30*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 31*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 32*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 33*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 34*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+
+*****************************************************************************
+/*V5C 35*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+
+*****************************************************************************
+/*V5C 36*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+
+*****************************************************************************
+/*V5C 37*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+
+*****************************************************************************
+/*V5C 38*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+
+*****************************************************************************
+/*V5C 39*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+
+***********************************************************************************
+/*V5C 40*/
+Set @Regnum= "AN1 Tish";
+set @Prev_regnum="";
+set @Document_Reference=8475673;
+set @First_reg="2011/07/30";
+set @first_reg_uk="2011/07/30";
+set @Make="Renault";
+Set @Model="Clio";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Gray";
+Set @Logbook_Issued_date="2021/03/13";
+set @Cylinder_capacity="2000 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Mark Ngo";
+Set @Prev_Owner1_Address="8 Forge Street Leicester LE6 3NN";
+Set @prev_Owner1_Acq_date="2016/03/27";
+
+set @Prev_owner2_Name="Sue Botta";
+Set @Prev_Owner2_Address="1 Ingles road Belford BE 1 8ST";
+Set @prev_Owner2_Acq_date= "2015/05/09";
+
+set @Prev_owner3_Name="";
+Set @Prev_Owner3_Address="";
+Set @prev_Owner3_Acq_date=null;
+
+set @Prev_owner4_Name="";
+Set @Prev_Owner4_Address="";
+Set @prev_Owner4_Acq_date=null;
+
+
+call icp_V5C_Call();
+
+select * from icp.V5C;
+
+*****************************************************************************
+
+/*V5C 41*/
+Set @Regnum= "YD14 XUU1";
+set @Prev_regnum="";
+set @Document_Reference=75847368391;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="";
+Set @Prev_Owner2_Address="";
+Set @prev_Owner2_Acq_date=null;
+
+set @Prev_owner3_Name="";
+Set @Prev_Owner3_Address="";
+Set @prev_Owner3_Acq_date=null;
+
+set @Prev_owner4_Name="";
+Set @Prev_Owner4_Address="";
+Set @prev_Owner4_Acq_date=null;
+
+*****************************************************************************
+/*V5C 42*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 43*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 44*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+
+*****************************************************************************
+/*V5C 45*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 46*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+
+*****************************************************************************
+/*V5C 47*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+
+*****************************************************************************
+/*V5C 48*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+
+*****************************************************************************
+/*V5C 49*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 50*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 51*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 52*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 53*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 54*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 55*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 56*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+
+*****************************************************************************
+/*V5C 57*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 58*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+
+*****************************************************************************
+/*V5C 59*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 60*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 61*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 62*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 63*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 64*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 65*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+
+*****************************************************************************
+/*V5C 66*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+
+*****************************************************************************
+/*V5C 67*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 68*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 69*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 70*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 71*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 72*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+*****************************************************************************
+/*V5C 73*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+
+*****************************************************************************
+/*V5C 74*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+
+*****************************************************************************
+/*V5C 75*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+
+*****************************************************************************
+/*V5C 76*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+
+*****************************************************************************
+/*V5C 77*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+
+*****************************************************************************
+/*V5C 78*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+
+
+*****************************************************************************
+/*V5C 79*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+
+*****************************************************************************
+/*V5C 80*/
+Set @Regnum= "ZC14 1XW";
+set @Prev_regnum="";
+set @Document_Reference=15891368541;
+set @First_reg="2014/09/16";
+set @first_reg_uk="2014/09/16";
+set @Make="BMW";
+Set @Model="3 Series";
+Set @Bodytype="5 door Hatchback";
+set @TaxClass="Diesel car";
+set @FuelType="Heavy Oil";
+Set @number_Seats=5;
+set @Vehicle_Category="M1";
+Set @Colour="Blue";
+Set @Logbook_Issued_date="2020/06/04";
+set @Cylinder_capacity="1995 CC";
+set @nbr_Prev_Owners=5;
+
+set @Prev_owner1_Name="Ivo Ngodo Kom";
+Set @Prev_Owner1_Address="1 Goodman Avenue Leicester LE4 1AG";
+Set @prev_Owner1_Acq_date="2020/05/15";
+
+set @Prev_owner2_Name="Jojo bojak";
+Set @Prev_Owner2_Address="3 fudichi kinanga Mpele MP1 35LX";
+Set @prev_Owner2_Acq_date="2019/01/09";
+
+set @Prev_owner3_Name="Ntonkana Mpinkanza";
+Set @Prev_Owner3_Address="184 zizi buvanada Bukavuvu Sama BU10 13BA";
+Set @prev_Owner3_Acq_date="2015/03/27";
+
+set @Prev_owner4_Name="Bebo Bubana";
+Set @Prev_Owner4_Address="1 seaside court Portsmouth England PO1 13A";
+Set @prev_Owner4_Acq_date="2014/09/19";
+
+call icp_V5C_Call;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

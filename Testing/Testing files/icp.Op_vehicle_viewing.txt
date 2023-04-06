@@ -1,0 +1,53 @@
+*****************************************************************************
+			icp.Op_vehicle_viewing insert Test
+*****************************************************************************
+
+set @Vehicle_of_interest = "SEAT IBIZA SPORT COUPE";
+set @Reg_numb = "SH58 BBZ";
+set @V5C_id = (select V5C_id from icp.V5C where Reg_numb=@Reg_numb);
+
+set @Nbr_Vehicles_viewed = 3;
+set @Customer_Age_Bracket = "25-29";
+set @Customer_sex = "F";
+set @City_or_village = "Swadlingcote";
+
+set @Viewing_date = "2021/08/23";
+set @Viewing_time = "10:45:00";
+set @Deposit_Flag = "1";/*0: No, 1: Yes*/
+set @Sale_Flag = "0";/*0: No, 1: Yes*/
+
+call Op_vehicle_viewing_call();
+select * from icp.Op_vehicle_viewing;
+
+Please ensure that all of the values are entered
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

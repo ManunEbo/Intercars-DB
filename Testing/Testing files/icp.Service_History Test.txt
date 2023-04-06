@@ -1,0 +1,21 @@
+*****************************************************************************
+		icp.Service_History import Test
+*****************************************************************************
+
+
+set @V5C_id ="";
+set @Vehicle_Reg_serv_Date ="";
+set @Serv_comp ="";
+set @Serv_Addr = "";
+set @Serv_Date = "";
+set @Serv_Parts_desc = "";
+set @Quantity = "";
+set @Unit_price ="";
+set @Sum_per_Parts ="";
+set @Total_Labour ="";
+set @Total_Parts ="";
+set @MOT_Fee ="";
+set @VAT ="";
+set @Grand_Total ="";
+
+call icp_service_history_call();

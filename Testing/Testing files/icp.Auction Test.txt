@@ -1,0 +1,20 @@
+*****************************************************************************
+			icp.Auction insert Test
+*****************************************************************************
+
+set @Entity_Name = "Aston";
+set @VAT_Registration_Number ="64736367";
+set @Addr1 ="The fields";
+set @Addr2 ="East Midland road";
+set @Addr3 ="Derby";
+set @Addr4 ="Derbyshire";
+set @Addr5 ="England";
+set @Addr6 ="DE17 5JJ";
+set @email ="Enquiry@Aston.com";
+set @Tel = "013458877613";
+
+insert into icp.Auction()values();
+
+select * from icp.Auction;
+select * from icp.Entity;
+select * from icp.Contact_details;

@@ -1,0 +1,332 @@
+*****************************************************************************
+		icp.Customer Insert Test
+*****************************************************************************
+
+/*Working with Deposit*/
+set @Split_pay = "No"; /*No, Yes*/
+set @Nbr_splits = 0;
+
+/* Single payment:
+   if @split_Pay = "No"*/
+
+set @Payment_method = "Card"; /* Cash, Card, Transfer*/
+set @Transfer_Reference = "";
+set @Card_nbr = 1038758475;
+set @Debit_Type = "Visa";
+set @Exp_Date = "2022/10/01";
+set @Start_Date = "2019/10/03";
+
+set @Trans_Date ="2021/08/08";/*Deposit date: */
+set @Trans_time = "16:44:00";
+set @Auth_code = 44953;
+set @Amount = 4500;
+set @Receipt_Nbr = 9837;
+set @Deposit_Date = "2021/08/08";
+set @Staff_id = 1;
+
+/*****************************************************/
+/*if @split_Pay = "Yes" and Nbr_splits = 3*/
+
+set @Payment_method1 = ""; /* Cash Card, Transfer*/
+set @Payment_method2 = ""; /* Cash Card, Transfer*/
+set @Payment_method3 = ""; /* Cash Card, Transfer*/
+
+set @Transfer_Reference1 ="";
+set @Transfer_Reference2 ="";
+set @Transfer_Reference3 ="";
+
+set @Card_nbr1 = "";
+set @Card_nbr2 = "";
+set @Card_nbr3 = "";
+
+set @Debit_Type1 = "";
+set @Debit_Type2 = "";
+set @Debit_Type3 = "";
+
+set @Exp_Date1 = "";
+set @Exp_Date2 = "";
+set @Exp_Date3 = "";
+
+set @Start_Date1 = "";
+set @Start_Date2 = "";
+set @Start_Date3 = "";
+
+set @Trans_Date1 ="";
+set @Trans_Date2 ="";
+set @Trans_Date3 ="";
+
+set @Trans_time1 = "";
+set @Trans_time2 = "";
+set @Trans_time3 = "";
+
+set @Auth_code1 = 0;
+set @Auth_code2 = 0;
+set @Auth_code3 = 0;
+
+set @Split_Amount1 = 0;
+set @Split_Amount2 = 0;
+set @Split_Amount3 = 0;
+/*******************************************************************/
+Set @Reg_numb="VK11 XTM";
+Set @V5C_ID = V5C_id
+Set @Fname="Elvy";
+Set @Mname="Kamunyoko";
+Set @Lname="Manun'Ebo";
+Set @DOB="1984/02/05";
+set @Age_Group="30 to 39";
+Set @Address1= 30;
+Set @Address2= "Bruce Close";
+Set @Address3= "Nottingham" ;
+Set @Address4= "Nottinghamshire" ;
+Set @Address5= "England" ;
+Set @Address6 ="NG2 2HR" ;
+Set @email = "elvymanunebo@yahoo.co.uk";
+Set @Tel= 07591142154;
+Set @Deposit_Date="2021/08/03";
+Set @Deposit_Amount=100;
+set @Sale_date="2021/08/08";/*2021/08/08*/
+
+Set @Sale_Amount=4500;
+set @Staff_id=1;
+
+insert into icp.Customer()
+values();
+
+select * from icp.Customer;
+select * from icp.Names;
+select * from icp.Sale;
+select * from icp.Deposit;
+select * from icp.Cash_Card_Payment;
+select * from icp.Receipt;
+select * from icp.Contact_details;
+
+*****************************************************************************
+*****************************************************************************
+
+		Hakimi Deposit
+	******************************
+
+/*Working with Deposit*/
+set @Split_pay = "Yes"; /*No, Yes*/
+set @Nbr_splits = 2;
+
+/* Single payment:
+   if @split_Pay = "No"*/
+
+set @Payment_method = ""; /* Cash, Card, Transfer*/
+set @Transfer_Reference = "";
+set @Card_nbr = 0;
+set @Debit_Type = "";/*Visa, Delta*/
+set @Exp_Date = "";
+set @Start_Date = "";
+
+set @Trans_Date ="";/*Sale date: */
+set @Trans_time = "";
+set @Auth_code = 0;
+set @Amount = 0;
+set @Receipt_Nbr = 0;
+
+/*****************************************************/
+/*if @split_Pay = "Yes" and Nbr_splits = 3*/
+
+set @Payment_method1 = "Transfer"; /* Cash Card, Transfer*/
+set @Payment_method2 = "Cash"; /* Cash Card, Transfer*/
+set @Payment_method3 = ""; /* Cash Card, Transfer*/
+
+set @Transfer_Reference1 ="HONDA CR-V EX I-VTEC";
+set @Transfer_Reference2 ="";
+set @Transfer_Reference3 ="";
+
+set @Card_nbr1 = "";
+set @Card_nbr2 = "";
+set @Card_nbr3 = "";
+
+set @Debit_Type1 = "";
+set @Debit_Type2 = "";
+set @Debit_Type3 = "";
+
+set @Exp_Date1 = "";
+set @Exp_Date2 = "";
+set @Exp_Date3 = "";
+
+set @Start_Date1 = "";
+set @Start_Date2 = "";
+set @Start_Date3 = "";
+
+set @Trans_Date1 ="";
+set @Trans_Date2 ="2021/03/03";
+set @Trans_Date3 ="";
+
+set @Trans_time1 = "";
+set @Trans_time2 = "13:47:00";
+set @Trans_time3 = "";
+
+set @Auth_code1 = 0;
+set @Auth_code2 = 0;
+set @Auth_code3 = 0;
+
+set @Split_Amount1 = 100;
+set @Split_Amount2 = 150;
+set @Split_Amount3 = 0;
+
+
+
+set @Receipt_Nbr1 = 0;
+set @Receipt_Nbr2 = 48576998;
+set @Receipt_Nbr3 = 0;
+
+
+/*******************************************************************/
+Set @Reg_numb="DS57 GCO";
+Set @Fname="Hakimi";
+Set @Mname="Lampa";
+Set @Lname="Ngi";
+Set @DOB="1981/09/28";
+set @Age_Group="30 to 39";
+Set @Address1= 45;
+Set @Address2= "Kerry road";
+Set @Address3= "Litchfield" ;
+Set @Address4= "Leicestershire" ;
+Set @Address5= "England" ;
+Set @Address6 ="LE17 9FH" ;
+Set @email = "Hakimi@Ngi.co.uk";
+Set @Tel= 07591149234;
+Set @Deposit_Date="2021/03/03";
+Set @Deposit_Amount=250;
+set @Sale_date="";
+
+Set @Sale_Amount=6700;
+set @Staff_id=1;
+
+insert into icp.Customer()
+values();
+
+select * from icp.Customer;
+select * from icp.Names;
+select * from icp.Contact_details;
+select * from icp.Deposit;
+select * from icp.Sale;
+select * from icp.Cash_Card_Payment;
+select * from icp.Transfer;
+select * from icp.Split_Payment;
+select * from icp.Receipt;
+
+*****************************************************************************
+*****************************************************************************
+
+		Hakimi Sale
+	***************************
+
+/*Working with Deposit*/
+set @Split_pay = "Yes"; /*No, Yes*/
+set @Nbr_splits = 3;
+
+/* Single payment:
+   if @split_Pay = "No"*/
+
+set @Payment_method = ""; /* Cash, Card, Transfer*/
+set @Transfer_Reference = "";
+set @Card_nbr = 0;
+set @Debit_Type = "";/*Visa, Delta*/
+set @Exp_Date = "";
+set @Start_Date = "";
+
+set @Trans_Date ="";/*Sale date: */
+set @Trans_time = "";
+set @Auth_code = 0;
+set @Amount = 0;
+set @Receipt_Nbr = 0;
+
+/*****************************************************/
+/*if @split_Pay = "Yes" and Nbr_splits = 3*/
+
+set @Payment_method1 = "Transfer"; /* Cash Card, Transfer*/
+set @Payment_method2 = "Card"; /* Cash Card, Transfer*/
+set @Payment_method3 = "Cash"; /* Cash Card, Transfer*/
+
+set @Transfer_Reference1 ="HONDA CR-V EX I-VTEC Sale";
+set @Transfer_Reference2 ="";
+set @Transfer_Reference3 ="";
+
+set @Card_nbr1 = "";
+set @Card_nbr2 = "7464383937578";
+set @Card_nbr3 = "";
+
+set @Debit_Type1 = "";
+set @Debit_Type2 = "VISA";
+set @Debit_Type3 = "";
+
+set @Exp_Date1 = "";
+set @Exp_Date2 = "2022/05/30";
+set @Exp_Date3 = "";
+
+set @Start_Date1 = "";
+set @Start_Date2 = "2018/06/01";
+set @Start_Date3 = "";
+
+set @Trans_Date1 ="";
+set @Trans_Date2 ="2021/03/05";
+set @Trans_Date3 ="2021/03/05";
+
+set @Trans_time1 = "";
+set @Trans_time2 = "11:06:33";
+set @Trans_time3 = "11:06:33";
+
+set @Auth_code1 = 0;
+set @Auth_code2 = 84738;
+set @Auth_code3 = 0;
+
+set @Split_Amount1 = 3000;
+set @Split_Amount2 = 3000;
+set @Split_Amount3 = 700;
+
+set @Receipt_Nbr1 = 0;
+set @Receipt_Nbr2 = 48576999;
+set @Receipt_Nbr3 = 48577000;
+
+
+/*******************************************************************/
+Set @Reg_numb="DS57 GCO";
+Set @Fname="Hakimi";
+Set @Mname="Lampa";
+Set @Lname="Ngi";
+Set @DOB="1981/09/28";
+set @Age_Group="30 to 39";
+Set @Address1= 45;
+Set @Address2= "Kerry road";
+Set @Address3= "Litchfield" ;
+Set @Address4= "Leicestershire" ;
+Set @Address5= "England" ;
+Set @Address6 ="LE17 9FH" ;
+Set @email = "Hakimi@Ngi.co.uk";
+Set @Tel= 07591149234;
+Set @Deposit_Date="2021/03/03";
+Set @Deposit_Amount=250;
+set @Sale_date="2021/03/05";
+
+Set @Sale_Amount=6700;
+set @Staff_id=1;
+
+insert into icp.Customer()
+values();
+
+select * from icp.Customer;
+select * from icp.Names;
+select * from icp.Contact_details;
+select * from icp.Deposit;
+select * from icp.Sale;
+select * from icp.Cash_Card_Payment;
+select * from icp.Transfer;
+select * from icp.Split_Payment;
+select * from icp.Receipt;
+
+*****************************************************************************
+*****************************************************************************
+
+
+
+
+
+
+
+

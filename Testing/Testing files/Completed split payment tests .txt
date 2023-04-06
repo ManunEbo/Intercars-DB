@@ -1,0 +1,28 @@
+*****************************************************************************
+		Which Testing Customer Split payments are done
+*****************************************************************************
+
+Testing:
+
+Deposit:
+	* Split pay = No
+		* Payment_method ="Card"
+			* Deposit followed by sale
+	* Split pay = 2
+		* Transfer
+		* Cash
+		* Example Hakimi
+		
+
+
+
+
+**********************************************************
+
+Sale:
+	* Split pay = 3
+		* Transfer
+		* Card
+		* Cash
+		* Example Hakimi
+

@@ -1,0 +1,96 @@
+*****************************************************************************
+		icp.Auction_invoice import Test
+*****************************************************************************
+
+/*Creating the after insert on icp.Auction_invoice trigger for icp.Op_VAT*/
+
+/*Invoice for "AN1 Tish" */
+set @Reg_nbr = "AN1 Tish";
+set @V5C_id = (select V5C_id from icp.V5C where Reg_numb = @Reg_nbr);
+
+set @Auction_id = (select Auction_id from icp.Entity where Entity_Name="Aston Barclays");
+set @Vendor_id = (select Vendor_id from icp.Entity where Entity_Name="Barclays");
+
+set @Invoice_nbr = "MM/731764";
+set @Invoice_Date = "2021-07-28";
+
+set @Make = "Renault";
+set @Model ="Clio";
+set @Date_first_Reg = "2011/07/30";
+set @MOT = "1";/*THis is boolean*/
+set @MOT_Expiry_date ="2021-11-27";
+set @Mileage = "187000";
+set @Cash_Payment = "0";/*This is boolean*/
+set @Price = 1175;
+set @Buyers_Fee = 100;
+set @Assurance_Fee = 10;
+set @Other_Fee = 15;
+set @Storage_Fee = 75;
+set @Cash_Handling_fee = 0;
+set @Auction_VAT = 550;
+set @Total = 3300;
+
+set @VAT_rate = 0.2;
+
+call icp_Auction_invoice_call();
+
+select * from icp.Auction_invoice;
+select * from icp.Op_VAT;
+
+						
+
+
+********************************************************************************************************
+
+set @Reg_nbr = "ZC14 1XW";
+set @V5C_id = (select V5C_id from icp.V5C where Reg_numb = @Reg_nbr);
+set @Auction_id = (select Auction_id from icp.Entity where Entity_Name="Aston");
+set @Vendor_id = (select Vendor_id from icp.Entity where Entity_Name="Barclays");
+set @Invoice_nbr = "MM/737764";
+set @Invoice_Date = "2021-04-11";
+
+set @Make = "BMW";
+set @Model ="3 Series";
+set @Date_first_Reg = "2017-12-16";
+set @MOT = "1";/*THis is boolean*/
+set @MOT_Expiry_date ="2021-08-01";
+set @Mileage = "15000";
+set @Cash_Payment = "0";/*This is boolean*/
+set @Price = "4075";
+set @Buyers_Fee = 100;
+set @Assurance_Fee = 10;
+set @Other_Fee = 15;
+set @Storage_Fee = 75;
+set @Cash_Handling_fee = 1;
+set @Auction_VAT = 855;
+set @Total = 5130;
+
+call icp_Auction_invoice_call();
+
+select * from icp.Auction_invoice;
+
+
+********************************************************************************************************
+set @Reg_nbr = "YD14 XUU";
+set @V5C_id = (select V5C_id from icp.V5C where Reg_numb = @Reg_nbr);
+set @Auction_id = (select Auction_id from icp.Entity where Entity_Name="Aston");
+set @Vendor_id = (select Vendor_id from icp.Entity where Entity_Name="Barclays");
+set @Invoice_nbr = "MM/737765";
+set @Invoice_Date = "2021-05-16";
+
+set @Make = "BMW";
+set @Model ="3 Series";
+set @Date_first_Reg = "2014-09-16";
+set @MOT = "1";/*THis is boolean*/
+set @MOT_Expiry_date ="2021-09-16";
+set @Mileage = "150000";
+set @Cash_Payment = "0";/*This is boolean*/
+set @Price = "1575";
+set @Buyers_Fee = 100;
+set @Assurance_Fee = 10;
+set @Other_Fee = 15;
+set @Storage_Fee = 75;
+set @Cash_Handling_fee = 0;
+set @Auction_VAT = 0;
+set @Total = 1775;
+

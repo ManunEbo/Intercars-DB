@@ -1,0 +1,101 @@
+*****************************************************************************
+			icp.Op_service send, return, invoice Test
+*****************************************************************************
+
+	* icp.Op_service
+		* Send vehicle for service
+		* Return vehicle from service
+		* Invoice for service
+
+*****************************************************************************
+*****************************************************************************
+*****************************************************************************
+
+		Send to service:
+	****************************************
+	
+set @V5C_id = (select V5C_id from icp.V5C where Reg_numb ="ZC14 1XW");
+set @serv_date = "2021-05-09";
+
+/*This must be selected from a dropdown menu
+  which pulls the data from a dictionary*/
+set @serv_type = "Carwash";
+
+set @Description = "Washing the car";
+
+/*Garages Names
+  Note: The garages names must be selected from a dropdown menu*/
+set @Mech_Grg_id = (select Mech_Grg_id from icp.Entity where Entity_Name = "");
+set @Elect_mech_id = (select Elect_mech_id from icp.Entity where Entity_Name = "");
+set @MOT_Grg_id = (select MOT_Grg_id from icp.Entity where Entity_Name = "");
+set @Carwash_id = (select Carwash_id from icp.Entity where Entity_Name = "The Carwash Place");
+
+
+*****************************************************************************
+
+		Return from service
+	*******************************************
+
+set @V5C_id = (select V5C_id from icp.V5C where Reg_numb ="ZC14 1XW");
+set @serv_type = "Carwash";
+set @serv_date = "2021-05-09";
+
+set @Serv_return_date ="2021-05-10";
+set @Service_quality_check_done = "Yes";
+set @Service_quality_description = "Very good work, quick and efficient";
+
+*****************************************************************************
+
+		Invoice for service
+	***********************************
+
+set @V5C_id = (select V5C_id from icp.V5C where Reg_numb ="ZC14 1XW");
+set @serv_type = "Carwash";
+set @serv_date = "2021-05-09";
+
+
+set @Serv_Invoice_nbr = "A647583";
+set @Serv_Invoice_Date = "2021-05-14";
+set @Price= 10;
+
+
+*****************************************************************************
+*****************************************************************************
+*****************************************************************************
+		
+	* icp.Op_service_Receipt
+	* icp.Op_bank_transfer
+	* icp.Op_misc_Receipt
+
+
+*************************************************************
+	Op_VAT
+
+Trigger tables for Op_VAT:
+	Only if @VAT_Flag="Y"
+	
+	* icp.Op_service_Receipt
+	* icp.Op_bank_transfer
+	* icp.Op_misc_Receipt
+	
+The following table is an automatic insert into Op_VAT
+	* icp.Auction_invoice
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

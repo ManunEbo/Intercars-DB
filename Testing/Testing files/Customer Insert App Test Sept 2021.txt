@@ -1,0 +1,215 @@
+*****************************************************************************
+		Customer Insert App Test
+*****************************************************************************
+
+		Section 1
+	*************************
+
+Set @Fname="Hakimi";
+Set @Mname="Lampa";
+Set @Lname="Ngi";
+Set @DOB="1981/09/28";
+set @Age_Group="30 to 39";
+Set @Address1= 45;
+Set @Address2= "Kerry road";
+Set @Address3= "Litchfield" ;
+Set @Address4= "Leicestershire" ;
+Set @Address5= "England" ;
+Set @Address6 ="LE17 9FH" ;
+Set @email = "Hakimi@Ngi.co.uk";
+Set @Tel= 07591149234;
+
+*****************************************************************************
+
+		Section 2
+	*************************
+
+Screen to determine Deposit or sale
+
+Vehicle:
+	* select vehicle from a dropdown list
+		* Make model vehicle registration
+			*** use ListProperty
+
+Options:
+	* Deposit
+	* Sale only
+	* Sale after Deposit
+	
+Payment options:
+	* 1 payment
+	* 2 payments
+	* 3 Payments
+
+*****************************************************************************
+
+		Section 3.1
+	*************************
+
+If in Options, above, Deposit was selected:
+
+	* and in Payment options One payment was selected:
+	
+	* Deposit_in_one
+
+Payment_method = ""; /* Cash, Card, Transfer*/
+Transfer_Reference = "";
+Card_nbr = 0;
+Debit_Type = "";/* MasterCard, Maestro, Visa, Delta, Visa Delta, Visa Electron */
+Exp_Date = "";
+Start_Date = "";
+
+Trans_Date ="";/*Transaction/Sale date: */
+Trans_time = "";
+Auth_code = 0;
+Deposit_Amount= 250;
+Receipt_Nbr = 0;
+
+*****************************************************************************
+
+		Section 3.2
+	*************************
+
+If in Options, above, Deposit was selected:
+
+	* and in Payment options 2 payment was selected:
+	
+	* Deposit_in_two
+
+set @Payment_method1 = "Transfer"; /* Cash Card, Transfer*/
+set @Payment_method2 = "Cash"; /* Cash Card, Transfer*/
+
+
+set @Transfer_Reference1 ="HONDA CR-V EX I-VTEC";
+set @Transfer_Reference2 ="";
+
+
+set @Card_nbr1 = "";
+set @Card_nbr2 = "";
+
+
+set @Debit_Type1 = "";
+set @Debit_Type2 = "";
+
+
+set @Exp_Date1 = "";
+set @Exp_Date2 = "";
+
+
+set @Start_Date1 = "";
+set @Start_Date2 = "";
+
+
+set @Trans_Date1 ="";
+set @Trans_Date2 ="2021/03/03";
+
+
+set @Trans_time1 = "";
+set @Trans_time2 = "13:47:00";
+
+set @Auth_code1 = 0;
+set @Auth_code2 = 0;
+
+set @Split_Amount1 = 100;
+set @Split_Amount2 = 150;
+
+set @Receipt_Nbr1 = 0;
+set @Receipt_Nbr2 = 48576998;
+
+
+*****************************************************************************
+
+		Section 3.3
+	*************************
+
+If in Options, above, Deposit was selected:
+
+	* and in Payment options 3 payment was selected:
+	
+	* Deposit_in_three
+
+*****************************************************************************
+
+		Section 3.4
+	*************************
+
+If in Options, above, Sale only was selected:
+
+	* and in Payment options One payment was selected:
+	
+	* Sale_in_one
+
+*****************************************************************************
+
+		Section 3.5
+	*************************
+
+If in Options, above, Sale only was selected:
+
+	* and in Payment options 2 payment was selected:
+	
+	* Sale_in_two
+
+*****************************************************************************
+
+		Section 3.6
+	*************************
+
+If in Options, above, Sale only was selected:
+
+	* and in Payment options 3 payment was selected:
+	
+	* Sale_in_three
+
+*****************************************************************************
+
+		Section 3.7
+	*************************
+
+If in Options, above, Sale after deposit was selected:
+
+	* and in Payment options 1 payment was selected:
+	
+	* Sale_after_deposit_in_one
+
+*****************************************************************************
+
+		Section 3.8
+	*************************
+
+If in Options, above, Sale after deposit was selected:
+
+	* and in Payment options 2 payment was selected:
+	
+	* Sale_after_deposit_in_two
+
+*****************************************************************************
+
+		Section 3.9
+	*************************
+
+If in Options, above, Sale after deposit was selected:
+
+	* and in Payment options 3 payment was selected:
+	
+	* Sale_after_deposit_in_three
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

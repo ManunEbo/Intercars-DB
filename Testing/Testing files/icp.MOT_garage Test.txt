@@ -1,0 +1,25 @@
+*****************************************************************************
+			icp.MOT_garage Test
+*****************************************************************************
+
+
+set @Entity_Name = "Simon says Motors2";
+set @VAT_Registration_Number ="82783976574";
+set @Addr1 ="22";
+set @Addr2 ="Wheeler dealer Drive";
+set @Addr3 ="Leicester";
+set @Addr4 ="Leicestershire";
+set @Addr5 ="England";
+set @Addr6 ="LE3 2AS";
+set @email ="Supermario@brothers.com";
+set @Tel = "01163458781";
+set @Fname = "Simon";
+set @Mname = "Tim";
+set @Lname = "Hurst";
+
+insert into icp.MOT_Garage()values();
+
+select * from icp.MOT_Garage;
+select * from icp.Names;
+select * from icp.Entity;
+select * from icp.Contact_details;

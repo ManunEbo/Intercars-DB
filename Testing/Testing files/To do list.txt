@@ -1,0 +1,67 @@
+		To do list
+	**************************
+
+1) Complete all the database Triggers and Procedures
+
+	* Staff Triggers	- done
+	* V5C Procedure	- done
+	* Service History procedure	- done
+	* MOT History procedure	- done
+	* MOT Refusal procedure	- done
+	* Mileage History	- done
+	* Electrical Trigger	- done
+	* Mechanic Trigger	- done
+	* MOT Garage Trigger	- done
+	* Carwash Trigger	- done
+	* Auction Trigger	- done
+	* Vendor Trigger	- done
+	* Fund Trigger		- done
+	* Auction invoice procedure	- done
+	* Op Service		- done
+	* Op Service Receipt	- done
+	* Op Misc Receipt	- done
+	* Op Bank Transfer		- done
+	* Op VAT		- done
+	
+	* Customer triggers:
+		* Deposit	- done
+		* Sale		- done
+	* Customer payment methods:
+	
+		* Transfer	- done
+		* Cash 	- done
+		* Split pay	- done
+		* Receipt	- done
+	
+
+2) Create a table for Vehicle viewings
+	icp.Op_vehicle_Viewing
+		* Test insert		- done
+2.1) Create a table for call logs
+	icp.Op_call_Log
+		* Test insert		- done
+
+3) 
+   Insert one example for each of the Segments inside the grey boxes
+   All of their id tables must have one entry
+   Each of their related, secondary table must also be filled in with
+   respective data
+
+
+4) Figure out how to backup a Mysql Database via Python
+
+5) Create a database for storing users and passwords and tracing who is logging into the App and when
+
+	User info table
+	Log history table
+	Failed_Attempt to login
+	What they did on the App
+
+	This will be useful for checking usage of the database
+
+
+
+
+
+
+	

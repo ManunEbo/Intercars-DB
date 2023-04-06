@@ -1,0 +1,21 @@
+*****************************************************************************
+			icp.Op_call_Log insert Test
+*****************************************************************************
+
+
+/*Insert into icp.Op_call_Log*/
+
+set @Name ="Humzani Korr";
+set @Customer_sex ="F"; /*F/M*/
+set @Tel =07775639810;
+set @City_or_village ="Swadlingcote";
+
+set @Vehicle_of_interest = "SEAT IBIZA SPORT COUPE";
+set @Reg_numb = "SH58 BBZ";
+set @V5C_id =(select V5C_id from icp.V5C where Reg_numb=@Reg_numb);
+
+set @Date_of_call = "2021/08/21";
+set @Time_of_Call = "11:30:00";
+
+call Op_call_Log_call();
+select * from icp.Op_call_Log;

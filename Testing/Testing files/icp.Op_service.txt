@@ -1,0 +1,252 @@
+*****************************************************************************
+			icp.Op_service import Tests
+*****************************************************************************
+/* Sending a car to the carwash*/
+
+set @V5C_id = (select V5C_id from icp.V5C where Reg_numb ="ZC14 1XW");
+set @serv_date = "2021-05-09";
+
+set @Serv_return_date ="2021-05-10";
+set @Service_quality_check_done = "Yes";
+set @Service_quality_description = "Very good work, quick and efficient";
+
+/*Garages Names
+  Note: The garages names must be selected from a dropdown menu*/
+set @Mech_Grg_id = (select Mech_Grg_id from icp.Entity where Entity_Name = "");
+set @Elect_mech_id = (select Elect_mech_id from icp.Entity where Entity_Name = "");
+set @MOT_Grg_id = (select MOT_Grg_id from icp.Entity where Entity_Name = "");
+set @Carwash_id = (select Carwash_id from icp.Entity where Entity_Name = "The Carwash Place");
+
+/*This must be selected from a dropdown menu
+  which pulls the data from the database*/
+
+
+set @Serv_Invoice_nbr = "A647583";
+set @Serv_Invoice_Date = "2021-05-14";
+
+/*This must be selected from a dropdown menu
+  which pulls the data from a dictionary*/
+set @serv_type = "Carwash";
+
+set @Description = "Washing the car";
+set @Price= 10;
+
+
+/* @Paid_date is not needed as it is on the receipt/transfer 
+	set @Paid_Date = "2021-05-17";*/
+
+
+/*1: Calling new service*/
+-- call Op_new_serv_call;
+-- select * from icp.Op_service;
+
+/*2: Calling service return*/
+-- call Return_from_service_call;
+-- select * from icp.Op_service;
+
+/*3: Calling the invoice procedure */
+-- call Invoice_Update_call;
+-- select * from icp.Op_service;
+
+*****************************************************************************
+/* Sending a car to the Mechanical garage*/
+
+set @V5C_id = (select V5C_id from icp.V5C where Reg_numb ="ZC14 1XW");
+set @serv_date = "2021-06-16";
+
+set @Serv_return_date ="2021-06-19";
+set @Service_quality_check_done = "Yes";
+set @Service_quality_description = "Decent work done";
+
+/*Garages Names
+  Note: The garages names must be selected from a dropdown menu*/
+set @Mech_Grg_id = (select Mech_Grg_id from icp.Entity where Entity_Name = "Simon says Motors");
+set @Elect_mech_id = (select Elect_mech_id from icp.Entity where Entity_Name = "");
+set @MOT_Grg_id = (select MOT_Grg_id from icp.Entity where Entity_Name = "");
+set @Carwash_id = (select Carwash_id from icp.Entity where Entity_Name = "");
+
+/*This must be selected from a dropdown menu
+  which pulls the data from the database*/
+
+
+set @Serv_Invoice_nbr = "I3789273";
+set @Serv_Invoice_Date = "2021-06-23";
+
+/*This must be selected from a dropdown menu
+  which pulls the data from a dictionary*/
+set @serv_type = "Mechanic";
+
+set @Description = "Radiator fix";
+set @Price= 70;
+
+/*1: Calling new service*/
+-- call Op_new_serv_call;
+-- select * from icp.Op_service;
+
+/*2: Calling service return*/
+-- call Return_from_service_call;
+-- select * from icp.Op_service;
+
+/*3: Calling the invoice procedure */
+-- call Invoice_Update_call;
+-- select * from icp.Op_service;
+
+*****************************************************************************
+/* Sending a car to the Electrical Mechanical garage*/
+
+set @V5C_id = (select V5C_id from icp.V5C where Reg_numb ="ZC14 1XW");
+set @serv_date = "2021-06-11";
+
+set @Serv_return_date ="2021-06-12";
+set @Service_quality_check_done = "Yes";
+set @Service_quality_description = "Electrifyingly good work";
+
+/*Garages Names
+  Note: The garages names must be selected from a dropdown menu*/
+set @Mech_Grg_id = (select Mech_Grg_id from icp.Entity where Entity_Name = "");
+set @Elect_mech_id = (select Elect_mech_id from icp.Entity where Entity_Name = "Super Mario Motors");
+set @MOT_Grg_id = (select MOT_Grg_id from icp.Entity where Entity_Name = "");
+set @Carwash_id = (select Carwash_id from icp.Entity where Entity_Name = "");
+
+/*This must be selected from a dropdown menu
+  which pulls the data from the database*/
+
+
+set @Serv_Invoice_nbr = "SM1114586";
+set @Serv_Invoice_Date = "2021-06-17";
+
+/*This must be selected from a dropdown menu
+  which pulls the data from a dictionary*/
+set @serv_type = "Electrical";
+
+set @Description = "Dashboard lighting fix";
+set @Price= 135;
+
+/*1: Calling new service*/
+-- call Op_new_serv_call;
+-- select * from icp.Op_service;
+
+/*2: Calling service return*/
+-- call Return_from_service_call;
+-- select * from icp.Op_service;
+
+/*3: Calling the invoice procedure */
+-- call Invoice_Update_call;
+-- select * from icp.Op_service;
+
+*****************************************************************************
+/* Sending a car to the MOT garage*/
+
+set @V5C_id = (select V5C_id from icp.V5C where Reg_numb ="ZC14 1XW");
+set @serv_date = "2021-03-16";
+
+set @Serv_return_date ="2021-03-17";
+set @Service_quality_check_done = "Yes";
+set @Service_quality_description = "Quality!";
+
+/*Garages Names
+  Note: The garages names must be selected from a dropdown menu*/
+set @Mech_Grg_id = (select Mech_Grg_id from icp.Entity where Entity_Name = "");
+set @Elect_mech_id = (select Elect_mech_id from icp.Entity where Entity_Name = "");
+set @MOT_Grg_id = (select MOT_Grg_id from icp.Entity where Entity_Name = "Simon Austin Hurst Motors");
+set @Carwash_id = (select Carwash_id from icp.Entity where Entity_Name = "");
+
+/*This must be selected from a dropdown menu
+  which pulls the data from the database*/
+
+
+set @Serv_Invoice_nbr = "AH75983732";
+set @Serv_Invoice_Date = "2021-03-18";
+
+/*This must be selected from a dropdown menu
+  which pulls the data from a dictionary*/
+set @serv_type = "MOT service";
+
+set @Description = "MOT Service";
+set @Price= 30;
+
+/*1: Calling new service*/
+-- call Op_new_serv_call;
+-- select * from icp.Op_service;
+
+/*2: Calling service return*/
+-- call Return_from_service_call;
+-- select * from icp.Op_service;
+
+/*3: Calling the invoice procedure */
+call Invoice_Update_call;
+select * from icp.Op_service;
+
+*****************************************************************************
+
+/* Sending a 2nd car to the carwash*/
+
+set @V5C_id = (select V5C_id from icp.V5C where Reg_numb ="AN1 Tish");
+set @serv_date = "2021-08-16";
+
+set @Serv_return_date ="2021-08-17";
+set @Service_quality_check_done = "Yes";
+set @Service_quality_description = "Very good work, quick and efficient";
+
+/*Garages Names
+  Note: The garages names must be selected from a dropdown menu*/
+set @Mech_Grg_id = (select Mech_Grg_id from icp.Entity where Entity_Name = "");
+set @Elect_mech_id = (select Elect_mech_id from icp.Entity where Entity_Name = "");
+set @MOT_Grg_id = (select MOT_Grg_id from icp.Entity where Entity_Name = "");
+set @Carwash_id = (select Carwash_id from icp.Entity where Entity_Name = "The Carwash Place");
+
+/*This must be selected from a dropdown menu
+  which pulls the data from the database*/
+
+
+set @Serv_Invoice_nbr = "A647584";
+set @Serv_Invoice_Date = "2021-08-19";
+
+/*This must be selected from a dropdown menu
+  which pulls the data from a dictionary*/
+set @serv_type = "Carwash";
+
+set @Description = "Washing the car";
+set @Price= 10;
+
+
+set @Paid_Date = "2021-08-21";
+
+/*1: Calling new service*/
+-- call Op_new_serv_call;
+-- select * from icp.Op_service;
+
+/*2: Calling service return*/
+-- call Return_from_service_call;
+-- select * from icp.Op_service;
+
+/*3: Calling the invoice procedure */
+-- call Invoice_Update_call;
+-- select * from icp.Op_service;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

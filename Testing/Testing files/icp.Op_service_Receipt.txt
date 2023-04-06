@@ -1,0 +1,185 @@
+/*Insert into Op_service_Receipt*/
+*****************************************************************************
+
+set @Serv_date = "2021-05-09";
+set @serv_type = "Carwash";
+set @V5C_id = (select V5C_id from icp.V5C where Reg_numb ="ZC14 1XW");
+set @Serv_Invoice_nbr = "A647583";
+
+/*To retrieve Op_service_id from icp.Op_service
+  use the following:*/
+set @Op_service_id = (select Op_service_id from icp.Op_service 
+				  where Serv_date = @Serv_date and serv_type = @serv_type 
+                  and V5C_id = @V5C_id and Serv_Invoice_nbr = @Serv_Invoice_nbr);
+
+set @Split_payment = 0; 
+set @Trans_Date = "2021-05-16";
+set @Trans_time = "15:36:00";
+set @Auth_code = 44316;
+set @Receipt_nbr = 45687839847;
+set @Amount = 10; 
+
+call Op_service_receipt_call();
+select * from icp.Op_service_Receipt;
+
+*****************************************************************************
+
+/*Insert into Op_service_Receipt*/
+
+set @Serv_date = "2021-06-16";
+set @serv_type = "Mechanic";
+set @V5C_id = (select V5C_id from icp.V5C where Reg_numb ="ZC14 1XW");
+set @Serv_Invoice_nbr = "I3789273";
+
+/*To retrieve Op_service_id from icp.Op_service
+  use the following:*/
+set @Op_service_id = (select Op_service_id from icp.Op_service 
+				  where Serv_date = @Serv_date and serv_type = @serv_type 
+                  and V5C_id = @V5C_id and Serv_Invoice_nbr = @Serv_Invoice_nbr);
+
+set @Split_payment = 0; 
+set @Trans_Date = "2021-06-25";
+set @Trans_time = "12:51";
+set @Auth_code = 998765;
+set @Receipt_nbr = 1093775856;
+set @Amount = 70; 
+
+call Op_service_receipt_call();
+select * from icp.Op_service_Receipt;
+
+*****************************************************************************
+
+/*Insert into Op_service_Receipt*/
+
+set @Serv_date = "2021-03-16";
+set @serv_type = "MOT service";
+set @V5C_id = (select V5C_id from icp.V5C where Reg_numb ="ZC14 1XW");
+set @Serv_Invoice_nbr = "AH75983732";
+
+/*To retrieve Op_service_id from icp.Op_service
+  use the following:*/
+set @Op_service_id = (select Op_service_id from icp.Op_service 
+				  where Serv_date = @Serv_date and serv_type = @serv_type 
+                  and V5C_id = @V5C_id and Serv_Invoice_nbr = @Serv_Invoice_nbr);
+
+set @Split_payment = 0; 
+set @Trans_Date = "2021-03-18";
+set @Trans_time = "09:31";
+set @Auth_code = 22345;
+set @Receipt_nbr = 09487576;
+set @Amount = 30; 
+
+call Op_service_receipt_call();
+select * from icp.Op_service_Receipt;
+
+*****************************************************************************
+/*Insert into Op_service_Receipt*/
+
+set @Serv_date = "2021-06-11";
+set @serv_type = "Electrical";
+set @V5C_id = (select V5C_id from icp.V5C where Reg_numb ="ZC14 1XW");
+set @Serv_Invoice_nbr = "SM1114586";
+
+/*To retrieve Op_service_id from icp.Op_service
+  use the following:*/
+set @Op_service_id = (select Op_service_id from icp.Op_service 
+				  where Serv_date = @Serv_date and serv_type = @serv_type 
+                  and V5C_id = @V5C_id and Serv_Invoice_nbr = @Serv_Invoice_nbr);
+
+set @Split_payment = 0; 
+set @Trans_Date = "2021-06-18";
+set @Trans_time = "10:50";
+set @Auth_code = 11319;
+set @Receipt_nbr = 87573543;
+set @Amount = 135; 
+
+call Op_service_receipt_call();
+select * from icp.Op_service_Receipt;
+
+*****************************************************************************
+
+New version of icp.Op_service_receipt with VAT insert via the trigger
+
+set @Serv_date = "2021-08-16";
+set @serv_type = "Carwash";
+set @V5C_id = (select V5C_id from icp.V5C where Reg_numb ="AN1 Tish");
+set @Serv_Invoice_nbr = "A647584";
+
+/*To retrieve Op_service_id from icp.Op_service
+  use the following:*/
+set @Op_service_id = (select Op_service_id from icp.Op_service 
+				  where Serv_date = @Serv_date and serv_type = @serv_type 
+                  and V5C_id = @V5C_id and Serv_Invoice_nbr = @Serv_Invoice_nbr);
+
+set @Split_payment = 0; 
+set @Trans_Date = "2021-08-21";
+set @Trans_time = "13:57:00";
+set @Auth_code = 44896;
+set @Receipt_nbr = 4889537661;
+set @Amount = 10;
+
+set @VAT_Flag ="Y";
+-- Set @Gross_Price = new.Amount;
+set @VAT_rate = 0.2;
+set @VAT = 2;
+set @Net = 8;
+
+call Op_service_receipt_call();
+select * from icp.Op_service_Receipt;
+select * from icp.Op_VAT;
+
+*****************************************************************************
+The test below is the same as the one immediately above
+but for the GUI print test
+
+*****************************************************************************
+			icp.Op_service_Receipt icp.op_VAT
+*****************************************************************************
+
+
+New version of icp.Op_service_receipt with VAT insert via the trigger
+
+set @serv_type = "Carwash";
+
+The information below will be pulled from the database 
+and displayed as a list [(Op_service_id,Serv_Invoice_Date,Serv_Invoice_nbr,Price)]:
+
+set @Op_service_id = "1";
+set @Serv_Invoice_Date = "2021-08-16";
+set @Serv_Invoice_nbr = "A647584";
+set @Price = 10
+
+
+set @Split_payment = 0; 
+set @Trans_Date = "2021-08-21";
+set @Trans_time = "13:57:00";
+set @Auth_code = 44896;
+set @Receipt_nbr = 4889537661;
+set @Amount = 10;
+
+set @VAT_Flag ="Y";
+
+************************************************
+
+*** Do the following in the .py file not the .kv file ***
+
+-- Set @Gross_Price = new.Amount;
+
+set @Net = @Amount/1.2;
+set @VAT_rate = 0.2;
+set @VAT = @Amount - @Net;
+
+
+call Op_service_receipt_call();
+select * from icp.Op_service_Receipt;
+select * from icp.Op_VAT;
+
+
+
+
+
+
+
+
+
+

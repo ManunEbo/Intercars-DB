@@ -1,0 +1,28 @@
+*****************************************************************************
+			icp.Electrical Test
+*****************************************************************************
+
+
+
+set @Entity_Name = "Super Mario Motors";
+set @VAT_Registration_Number ="84783976574";
+
+set @Fname = "Mario";
+set @Mname = "Kravki";
+set @Lname = "Bozlanivi";
+
+set @Addr1 ="2";
+set @Addr2 ="Wheeler dealer Drive";
+set @Addr3 ="Leicester";
+set @Addr4 ="Leicestershire";
+set @Addr5 ="England";
+set @Addr6 ="LE3 5AS";
+set @email ="Supermario@brothers.com";
+set @Tel = "01163458761";
+
+insert into icp.Electrical()values();
+
+select * from icp.Electrical;
+select * from icp.Names;
+select * from icp.Entity;
+select * from icp.Contact_details;
