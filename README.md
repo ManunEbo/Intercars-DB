@@ -12,7 +12,7 @@ which would in turn drive profitable decisions.
 Intercars Leicester were approached with the concept of migrating all their<br>
 data which at the time was kept in paper form into an on premises MySQL database<br>
 with a dedicated server laptop which could be connected to from any other laptops<br>
-via ssh via a GUI. Note, the GUI is the second part of this discontinued project.<br><br>
+via ssh or via a GUI. Note, the GUI is the second part of this discontinued project.<br><br>
 
 To accomplishing the project, a few weeks were spent understanding how the<br>
 business operates and what data they collect. After this period, the project<br>
