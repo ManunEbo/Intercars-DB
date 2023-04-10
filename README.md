@@ -14,9 +14,9 @@ data which at the time was kept in paper form into an on premises MySQL database
 with a dedicated server laptop which could be connected to from any other laptops<br>
 via ssh or via a GUI. Note, the GUI is the second part of this discontinued project.<br><br>
 
-To accomplishing the project, a few weeks were spent understanding how the<br>
+To start the project, a few weeks were spent understanding how the<br>
 business operates and what data they collect. After this period, the project<br>
-blue print was drawn, see Intercars DB Concept_Sep2021.xlsx under Documents.<br><br>
+plan was drawn, see Intercars DB Concept_Sep2021.xlsx under Documents.<br><br>
 
 Various tasks were undertaken to ensure that the eventual database was a<br>
 summarised reflection of the business. Once the tables were designed, the<br>
