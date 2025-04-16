@@ -20,8 +20,10 @@ plan was drawn, see <a href="https://github.com/ManunEbo/Intercars-DB/tree/maste
 
 </p>
 
-<p>
+
 <h4>The project plan</h4>
+
+<p>
 Here the database is organised into 4 distinct types of tables: <br>
 
 <ul>
@@ -55,14 +57,16 @@ combination of procedures <a href="https://github.com/ManunEbo/Intercars-DB/tree
 to it's final destination.<br><br>
 </p>
 
+
+<h4>Testing</h4>
 <p>
-<strong>Testing</strong> <br>
 Manual testing of data entry into the various tables was carried out to ensure the data transportation<br>
 to its final destination is correct and successful. You can find the testing at: <a href="https://github.com/ManunEbo/Intercars-DB/tree/master/Testing">6. Testing</a>
 </p>
 
+
+<h4>Database Backup</h4> <br>
 <p>
-<strong>Database Backup</strong> <br>
 <b>Note:</b> The db backup files here are for testing only. There is no live db backups in this repo.<br>
 However, the backup script, that would have been used for backing up the database is included.<br>
 You can find the backup folder in <a href="https://github.com/ManunEbo/Intercars-DB/tree/master/DB%20Backup">8. DB Backup</a>
