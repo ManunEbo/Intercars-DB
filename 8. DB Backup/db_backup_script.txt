@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Database credentials
+# The database credentials are now stored in environment variables in ~/.bashrc
+# they are as follows:
+# DB_USER_1
+# DB_PASSWORD_1
+# DB_NAME_1
+# BACK_UP_1
+# BACKUP_DIR_1
+
+
+# Timestamp (to create unique backup filenames)
+TIMESTAMP=$(date +"%Y%m%d%H%M%S")
+
+# Create backup directory if it doesn't exist
+#mkdir -p $BACKUP_DIR
+
+# Backup the MySQL database
+mysqldump -u$DB_USER_1 -p$DB_PASSWORD_1 $DB_NAME_1 > ${BACKUP_DIR_1}${DB_NAME_1}-${BACK_UP_1}-${TIMESTAMP}.sql
+
+# Optionally, you can remove backups older than 15 days
+find $BACKUP_DIR -type f -name "*.sql" -mtime +15 -exec rm {} \;
+
+echo "Backup completed: ${BACKUP_DIR}${DB_NAME}-${BACK_UP}-${TIMESTAMP}.sql"
