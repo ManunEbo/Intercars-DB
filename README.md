@@ -21,7 +21,7 @@ plan was drawn, see <a href="https://github.com/ManunEbo/Intercars-DB/tree/maste
 </p>
 
 <p>
-<strong>The project plan</strong> <br>
+<h4>The project plan</h4> <br>
 Here the database is organised into 4 distinct types of tables: <br>
 
 <ul>
