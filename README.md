@@ -54,7 +54,7 @@ Various tasks were undertaken to ensure that the eventual database was a<br>
 summarised reflection of the business. Once the tables were designed, the<br>
 combination of procedures <a href="https://github.com/ManunEbo/Intercars-DB/tree/master/Procedures">4. Procedures</a>
  and triggers <a href="https://github.com/ManunEbo/Intercars-DB/tree/master/Triggers">5. Triggers</a> were used for trafficking data<br>
-to it's final destination.<br><br>
+to it's final destination.
 </p>
 
 
