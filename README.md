@@ -1,6 +1,6 @@
 <h1>Intercars-DB</h1>
 
-<h3>Intercars background</h3>
+<h2>Intercars background</h2>
 
 <p>
 Intercars Leicester is an ambitious car dealership based in Leicester.<br>
@@ -10,7 +10,7 @@ improved to enable them to gain greater insight from the data they collect<br>
 which would in turn drive profitable decisions.
 </p>
 
-<h3>The project</h3>
+<h2>The project</h2>
 
 <p>
 Intercars Leicester were approached with the concept of migrating all their<br>
@@ -19,9 +19,9 @@ with a dedicated server laptop which could be connected to from any other laptop
 via ssh or via a GUI. Note, the GUI is the second part of this discontinued project.
 </p>
 
-<h3>Data modelling</h3>
+<h2>Data modelling</h2>
 
-<h4>Conceptual Data Model</h4>
+<h3>Conceptual Data Model</h3>
 <p>
 To kick start the project, a few weeks were spent understanding how the<br>
 business operates and what data they collect. From this a general picture emerged<br>
@@ -36,7 +36,7 @@ of organising the data into 4 distinct types of tables: <br>
 
 </p>
 
-<h4>Logical Data Model</h4>
+<h3>Logical Data Model</h3>
 
 <p>
 For each table all of it's variables and variable characteristics were considered<br>
@@ -64,7 +64,7 @@ At this point it was decided not to index the database, as that can be done late
 
 </p>
 
-<h4>Physical Data Model</h4>
+<h3>Physical Data Model</h3>
 
 <p>
 Various tasks were undertaken to ensure that the eventual database was a summarised reflection of the business.<br>
@@ -75,14 +75,14 @@ were used for trafficking data to it's final destination.
 </p>
 
 
-<h4>Testing</h4>
+<h3>Testing</h3>
 
 <p>
 Manual testing of data entry into the various tables was carried out to ensure the data transportation<br>
 to its final destination was accurate and successful. You can find the testing at <a href="https://github.com/ManunEbo/Intercars-DB/tree/master/6.%20Testing">6. Testing</a>
 </p>
 
-<h4>Database Backup</h4>
+<h3>Database Backup</h3>
 
 <p>
 <b>Note:</b> The db backup files here are for testing only. There is no live db backups in this repo.<br>
@@ -90,6 +90,7 @@ However, the backup script, that would have been used for backing up the databas
 You can find the backup folder in <a href="https://github.com/ManunEbo/Intercars-DB/tree/master/8.%20DB%20Backup">8. DB Backup</a>
 </p>
 
+<h3>Additional remarks</h3>
 <p>
 Since the project was discontinued and Intercars did not object to the publishing of<br>
 this body of work to illustrate my capabilities, in additions to me owning this project,
