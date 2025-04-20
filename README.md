@@ -93,7 +93,7 @@ You can find the backup folder in <a href="https://github.com/ManunEbo/Intercars
 <h2>Additional remarks</h2>
 <p>
 Since the project was discontinued and Intercars did not object to the publishing of<br>
-this body of work to illustrate my capabilities, in additions to me owning this project,
+this body of work to illustrate my capabilities, in additions to me owning this project,<br>
 I have decided to publish it publicly.
 
 <b>Note:</b> This project is part 1 of the discontinued project.<br>
