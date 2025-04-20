@@ -75,14 +75,14 @@ were used for trafficking data to it's final destination.
 </p>
 
 
-<h3>Testing</h3>
+<h2>Testing</h2>
 
 <p>
 Manual testing of data entry into the various tables was carried out to ensure the data transportation<br>
 to its final destination was accurate and successful. You can find the testing at <a href="https://github.com/ManunEbo/Intercars-DB/tree/master/6.%20Testing">6. Testing</a>
 </p>
 
-<h3>Database Backup</h3>
+<h2>Database Backup</h2>
 
 <p>
 <b>Note:</b> The db backup files here are for testing only. There is no live db backups in this repo.<br>
@@ -90,7 +90,7 @@ However, the backup script, that would have been used for backing up the databas
 You can find the backup folder in <a href="https://github.com/ManunEbo/Intercars-DB/tree/master/8.%20DB%20Backup">8. DB Backup</a>
 </p>
 
-<h3>Additional remarks</h3>
+<h2>Additional remarks</h2>
 <p>
 Since the project was discontinued and Intercars did not object to the publishing of<br>
 this body of work to illustrate my capabilities, in additions to me owning this project,
