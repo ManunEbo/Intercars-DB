@@ -40,9 +40,10 @@ of organising the data into 4 distinct types of tables: <br>
 
 <p>
 For each table all of it's variables and variable characteristics were considered<br>
-After this period, the database structure/architecture was drawn using the EER diagram i.e. the tables, table types, variables, variable types<br>
-and characteristics; primary keys, foreign keys etc see <a href="https://github.com/ManunEbo/Intercars-DB/tree/master/Documents">1. Documents</a> <b>Intercars DB Concept_Sep2021.xlsx</b> under Documents.<br>
-and or the EER diagram  <a href="https://github.com/ManunEbo/Intercars-DB/tree/master/EER">2. EER</a>
+After this period, the database structure/architecture was drawn using the EER diagram<br>
+i.e. the tables, table types, variables, variable types and characteristics;<br>
+primary keys, foreign keys etc see <a href="https://github.com/ManunEbo/Intercars-DB/tree/master/1.%20Documents">1. Documents</a> <b>Intercars DB Concept_Sep2021.xlsx</b> under Documents.<br>
+and or the EER diagram  <a href="https://github.com/ManunEbo/Intercars-DB/tree/master/2.%20EER">2. EER</a>
 
 A <strong>Data Dictionary</strong> for the database consisting of 6 columns was then created:<br>
 
@@ -52,12 +53,12 @@ A <strong>Data Dictionary</strong> for the database consisting of 6 columns was 
 <li> <strong>Table:</strong> The table name</li>
 <li> <strong>Variable:</strong> The variable name</li>
 <li> <strong>Type:</strong> The variable type e.g. Varchar, INT or BIGINT</li>
-<li> <strong>Miscellaneous:</strong> The variable characteristics e.g. Primary key, Foreign key, not null, unique, auto-increment etc</li>
+<li> <strong>Miscellaneous:</strong> The variable characteristics e.g. Primary key,<br>Foreign key, not null, unique, auto-increment etc</li>
 <li> <strong>Description:</strong> A short explanation of what the variable is<br>giving context to the variable</li>
 
 </ul>
 
-This can also be found under <a href="https://github.com/ManunEbo/Intercars-DB/tree/master/Documents">1. Documents</a>.<br>
+This can also be found under <a href="https://github.com/ManunEbo/Intercars-DB/tree/master/1.%20Documents">1. Documents</a>.<br>
 
 At this point it was decided not to index the database, as that can be done later.
 
@@ -68,8 +69,8 @@ At this point it was decided not to index the database, as that can be done late
 <p>
 Various tasks were undertaken to ensure that the eventual database was a summarised reflection of the business.<br>
 Once the database setup was created, <a href="https://github.com/ManunEbo/Intercars-DB/tree/master/3. DB setup">3. DB setup</a>
-the combination of procedures <a href="https://github.com/ManunEbo/Intercars-DB/tree/master/Procedures">4. Procedures</a>
- and triggers <a href="https://github.com/ManunEbo/Intercars-DB/tree/master/Triggers">5. Triggers</a> <br>
+the combination of procedures <a href="https://github.com/ManunEbo/Intercars-DB/tree/master/4.%20Procedures">4. Procedures</a>
+ and triggers <a href="https://github.com/ManunEbo/Intercars-DB/tree/master/5.%20Triggers">5. Triggers</a> <br>
 were used for trafficking data to it's final destination.
 </p>
 
@@ -78,7 +79,7 @@ were used for trafficking data to it's final destination.
 
 <p>
 Manual testing of data entry into the various tables was carried out to ensure the data transportation<br>
-to its final destination was accurate and successful. You can find the testing at: <a href="https://github.com/ManunEbo/Intercars-DB/tree/master/Testing">6. Testing</a>
+to its final destination was accurate and successful. You can find the testing at: <a href="https://github.com/ManunEbo/Intercars-DB/tree/master/6.%20Testing">6. Testing</a>
 </p>
 
 <h4>Database Backup</h4>
@@ -86,7 +87,7 @@ to its final destination was accurate and successful. You can find the testing a
 <p>
 <b>Note:</b> The db backup files here are for testing only. There is no live db backups in this repo.<br>
 However, the backup script, that would have been used for backing up the database is included.<br>
-You can find the backup folder in <a href="https://github.com/ManunEbo/Intercars-DB/tree/master/DB%20Backup">8. DB Backup</a>
+You can find the backup folder in <a href="https://github.com/ManunEbo/Intercars-DB/tree/master/8.%20DB%20Backup">8. DB Backup</a>
 </p>
 
 <p>
