@@ -1,4 +1,7 @@
-<h1>Intercars background</h1>
+<h1>Intercars-DB</h1>
+
+<h3>Intercars background</h3>
+
 <p>
 Intercars Leicester is an ambitious car dealership based in Leicester.<br>
 They are very active in auctions in the east and west midlands.<br>
@@ -8,23 +11,21 @@ which would in turn drive profitable decisions.
 </p>
 
 <h3>The project</h3>
+
 <p>
 Intercars Leicester were approached with the concept of migrating all their<br>
 data which at the time was kept in paper form into an on premises MySQL database<br>
 with a dedicated server laptop which could be connected to from any other laptops<br>
-via ssh or via a GUI. Note, the GUI is the second part of this discontinued project.<br><br>
-
-To start the project, a few weeks were spent understanding how the<br>
-business operates and what data they collect. After this period, the project<br>
-plan was drawn, see <a href="https://github.com/ManunEbo/Intercars-DB/tree/master/Documents">3. Documents</a> <b>Intercars DB Concept_Sep2021.xlsx</b> under Documents.<br>
-
+via ssh or via a GUI. Note, the GUI is the second part of this discontinued project.
 </p>
 
+<h3>Data modelling</h3>
 
-<h4>The project plan</h4>
-
+<h4>Conceptual Data Model</h4>
 <p>
-Here the database is organised into 4 distinct types of tables: <br>
+To kick start the project, a few weeks were spent understanding how the<br>
+business operates and what data they collect. From this a general picture emerged<br>
+of organising the data into 4 distinct types of tables: <br>
 
 <ul>
 <li> <b>Info:</b> These types of tables store information<br>about the stakeholders of the business</li>
@@ -32,12 +33,21 @@ Here the database is organised into 4 distinct types of tables: <br>
 <li> <b>Vehicle Finance:</b> These types of tables are for vehicle transactions and vehicle receipts</li>
 <li> <b>Vehicle History:</b> These types of tables hold historical records for the vehicle.</li>
 </ul>
-<br>
 
-The <b>Intercars DB Concept_Sep2021.xlsx</b> comes with a <strong>Data Dictionary</strong> which consists<br>
-of 6 columns:<br>
+</p>
+
+<h4>Logical Data Model</h4>
+
+<p>
+For each table all of it's variables and variable characteristics were considered<br>
+After this period, the database structure/architecture was drawn using the EER diagram i.e. the tables, table types, variables, variable types<br>
+and characteristics; primary keys, foreign keys etc see <a href="https://github.com/ManunEbo/Intercars-DB/tree/master/Documents">1. Documents</a> <b>Intercars DB Concept_Sep2021.xlsx</b> under Documents.<br>
+and or the EER diagram  <a href="https://github.com/ManunEbo/Intercars-DB/tree/master/EER">2. EER</a>
+
+A <strong>Data Dictionary</strong> for the database consisting of 6 columns was then created:<br>
 
 <ul>
+
 <li> <strong>Type:</strong> The table type/group as described above</li>
 <li> <strong>Table:</strong> The table name</li>
 <li> <strong>Variable:</strong> The variable name</li>
@@ -47,24 +57,32 @@ of 6 columns:<br>
 
 </ul>
 
+This can also be found under <a href="https://github.com/ManunEbo/Intercars-DB/tree/master/Documents">1. Documents</a>.<br>
+
+At this point it was decided not to index the database, as that can be done later.
+
 </p>
 
+<h4>Physical Data Model</h4>
+
 <p>
-Various tasks were undertaken to ensure that the eventual database was a<br>
-summarised reflection of the business. Once the tables were designed, the<br>
-combination of procedures <a href="https://github.com/ManunEbo/Intercars-DB/tree/master/Procedures">4. Procedures</a>
- and triggers <a href="https://github.com/ManunEbo/Intercars-DB/tree/master/Triggers">5. Triggers</a> were used for trafficking data<br>
-to it's final destination.
+Various tasks were undertaken to ensure that the eventual database was a summarised reflection of the business.<br>
+Once the database setup was created, <a href="https://github.com/ManunEbo/Intercars-DB/tree/master/3. DB setup">3. DB setup</a>
+the combination of procedures <a href="https://github.com/ManunEbo/Intercars-DB/tree/master/Procedures">4. Procedures</a>
+ and triggers <a href="https://github.com/ManunEbo/Intercars-DB/tree/master/Triggers">5. Triggers</a> <br>
+were used for trafficking data to it's final destination.
 </p>
 
 
 <h4>Testing</h4>
+
 <p>
 Manual testing of data entry into the various tables was carried out to ensure the data transportation<br>
-to its final destination is correct and successful. You can find the testing at: <a href="https://github.com/ManunEbo/Intercars-DB/tree/master/Testing">6. Testing</a>
+to its final destination was accurate and successful. You can find the testing at: <a href="https://github.com/ManunEbo/Intercars-DB/tree/master/Testing">6. Testing</a>
 </p>
 
 <h4>Database Backup</h4>
+
 <p>
 <b>Note:</b> The db backup files here are for testing only. There is no live db backups in this repo.<br>
 However, the backup script, that would have been used for backing up the database is included.<br>
@@ -82,5 +100,3 @@ You can find the second part, The Graphical User Interface (GUI) built with pyth
 The whole project was certainly an enjoyable experience: I learned a great deal, in a very short period of time.
 
 </p>
-
-
